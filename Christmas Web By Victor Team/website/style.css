@@ -64,10 +64,12 @@ h5{
     color: #228B22;
 }
 .sp1{
+    font-size: 2.0rem;
     color: #228B22;
 }
 .sp2{
     color: #B22222;
+    font-size: 2.0rem;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -110,6 +112,28 @@ h5{
     margin-bottom: -50px;
 }
 .next-btn:hover {
+    background-color: #8B0000;
+}
+
+#copyButton {
+    position: absolute;
+    bottom: 10%;
+    left: -22%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #B22222;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 39%;
+    margin-bottom: -50px;
+}
+
+#copyButton:hover {
     background-color: #8B0000;
 }
 /* Long Message Styling */
@@ -160,7 +184,7 @@ h5{
     .copyright{
         position: absolute;
         color: #fff;
-        margin-bottom: -111.5%;
+        margin-bottom: -110.5%;
     }
 }
 
@@ -170,7 +194,7 @@ h5{
     }
 
     .text-overlay h1 {
-        font-size: 1.5rem;
+        font-size: 2.0rem;
     }
 
 
