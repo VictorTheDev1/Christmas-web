@@ -1,4 +1,5 @@
-  // Extract the username from the query parameters
+
+// Extract the username from the query parameters
   const urlParams = new URLSearchParams(window.location.search);
   const username = urlParams.get('name');
 
@@ -9,6 +10,19 @@
     document.getElementById('username').textContent = "Guest";
   }
 
+
+
+  document.getElementById('copyButton').addEventListener('click', function() {
+    // Get the current URL
+    const currentURL = window.location.href;
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(currentURL).then(() => {
+        alert('Copied, Share with friends now');
+    }).catch(err => {
+        console.error('Failed to copy URL: ', err);
+    });
+});
 
 
   // Array of greeting screens
